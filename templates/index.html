@@ -4,10 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ace Perez - Software Developer</title>
+  <!-- Used for the Tab icon in the browser -->
   <link rel="icon" type="image/png" href="{{ url_for('static', filename='assets/icon.png') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"/>
 </head>
 <body>
+  <!-- Nav bar on top of page -->
   <header class="navbar">
     <div class="logo"><a href="{{ url_for('home') }}" class="logo"><span>Ace Perez</span></a></div>
     <nav class="nav-links">
@@ -15,15 +17,17 @@
       <a href="{{ url_for('projects') }}">Projects</a>
       <a href="{{ url_for('education') }}">Education</a>
     </nav>
-
   </header>
 
+  <!-- about me and a picture of yourself -->
   <section class="hero">
+    <div class="hero-text">
       <div class="project">
         <h2>Hi</h2>
         <h1>I'm <span class="highlight">Ace Perez</span><br/>a Software Developer</h1>
         <p>As a proficient expert in AWS and cloud-based solutions, I am specialized in developing advanced data analytics and DevOp solutions for scalable, distributed systems. My skill set is particularly strong in collaborative teamwork and problem-solving within Agile environments. I am keen to contribute my expertise to projects and collaborate with a team of skilled professionals.</p>
       </div>
+    </div>
     <div class="hero-img">
       <img src="{{ url_for('static', filename='assets/acenath-2.jpg') }}" alt="Ace Perez" />
     </div>

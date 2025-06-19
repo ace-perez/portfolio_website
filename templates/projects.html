@@ -4,9 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ace Perez - Software Developer</title>
+  <!-- Used for the Tab icon in the browser -->
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='assets/icon.png') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"/>
 </head>
 <body>
+  <!-- Nav bar on top of page -->
   <header class="navbar">
     <div class="logo"><a href="{{ url_for('home') }}" class="logo"><span>Ace Perez</span></a></div>
     <nav class="nav-links">
@@ -16,6 +19,7 @@
     </nav>
   </header>
 
+  <!-- Information section -->
   <section class="hero">
     <div class="hero-text">
       <h1><span class="highlight">My Projects</span></h1>
