@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ace Perez - Software Developer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"/>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo"><a href="{{ url_for('home') }}" class="logo"><span>Ace Perez</span></a></div>
+    <nav class="nav-links">
+      <a href="{{ url_for('experience') }}">Experience</a>
+      <a href="{{ url_for('projects') }}">Projects</a>
+      <a href="{{ url_for('education') }}">Education</a>
+    </nav>
+
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Hi</h2>
+      <h1>I'm <span class="highlight">Ace Perez</span><br/>a Software Developer</h1>
+      <p>As a proficient expert in AWS and cloud-based solutions, I am specialized in developing advanced data analytics and DevOp solutions for scalable, distributed systems. My skill set is particularly strong in collaborative teamwork and problem-solving within Agile environments. I am keen to contribute my expertise to projects and collaborate with a team of skilled professionals.</p>
+    </div>
+    <div class="hero-img">
+      <img src="{{ url_for('static', filename='assets/profile.png') }}" alt="Ace Perez" />
+    </div>
+  </section>
+</body>
+</html>

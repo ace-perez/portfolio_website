@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ace Perez - Software Developer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"/>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo"><a href="{{ url_for('home') }}" class="logo"><span>Ace Perez</span></a></div>
+    <nav class="nav-links">
+      <a href="{{ url_for('experience') }}">Experience</a>
+      <a href="{{ url_for('projects') }}">Projects</a>
+      <a href="{{ url_for('education') }}">Education</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1><span class="highlight">My Projects</span></h1>
+      
+      <div class="project">
+        <h2>Project Name 1</h2>
+        <p>Description of your first project. Explain what technologies you used, what problem it solved, and what you learned from building it.</p>
+      </div>
+      
+      <div class="project">
+        <h2>Project Name 2</h2>
+        <p>Description of your second project. Include details about the challenges you faced and how you overcame them.</p>
+      </div>
+      
+      <div class="project">
+        <h2>Project Name 3</h2>
+        <p>Description of your third project. Mention any notable features or technologies that make this project stand out.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
